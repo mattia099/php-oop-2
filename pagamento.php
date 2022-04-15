@@ -9,7 +9,7 @@ class Pagamento{
     try{
       $this-> setNumero($_numeroCarta);
       $this-> setCvv($_cvv);
-      $this->scadenza = $_scadenza;
+      $this-> scadenza = $_scadenza;
     }catch(Exception $e){
       echo 'Error:' .$e->getMessage();
     }
@@ -32,4 +32,6 @@ class Pagamento{
       throw new Exception('Il numero della carta deve essere un numero di 16 cifre');
     }
   }
+
+  
 };
