@@ -8,7 +8,7 @@ require_once __DIR__. '/prodotto.php';
 
 
 //prodotto
-$prova = new Prodotto('croccantini', 10.00, 'cibo', 1 );
+$prova = new Prodotto('croccantini', 10.00, 1 );
 
 var_dump($prova);
 echo '<br>';
@@ -23,4 +23,11 @@ echo '<br>';
 //utente registrato
 $login1 = new Registrato('Ciccio','Franco','cicciofranco@hotmail.it','ciccio99!');
 $login1->addMetodoPagamento(1568418312345678, 123 , '10/12');
+
+
+
+//carrello
+
+$login1->getCarrello()->addProdotto('croccatini', 10.00, 1);
+
 var_dump($login1);

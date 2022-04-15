@@ -1,6 +1,7 @@
 <?php
 
 require_once __DIR__. '/pagamento.php';
+require_once __DIR__. '/carrello.php';
 
 class Utente{
   public $nome;
