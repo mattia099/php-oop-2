@@ -1,7 +1,7 @@
 <?php
 
 require_once __DIR__. '/utente.php';
-require_once __DIR__. '/carrello.php';
+
 
 class Registrato extends Utente{
   
@@ -16,7 +16,7 @@ class Registrato extends Utente{
     try{
       $this->setEmail($_email);
       $this->setPassword($_password);
-      $this->carrello = new Carrello();
+      
     }catch (Exception $e){
       echo 'Error: ' .$e->getMessage();
     }
@@ -38,9 +38,6 @@ class Registrato extends Utente{
     }
   }
 
-  public function getCarrello()
-  {
-    return $this->carrello;
-  }
+  
   
 };

@@ -12,4 +12,5 @@ class Carrello{
     $this->prezzoTotale += $prezzo*$quantita; 
   }
 
+
 }
